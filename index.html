@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marcos Rostan Davyt</title>
+  <meta name="description" content="Marcos Rostan Davyt — filósofo radicado en Montevideo. Investigación en filosofía del arte, estética analítica y crítica artística." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌀</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --paper: #ffffff;
+      --accent: #0047cc;
+      --rule: #d0d0d0;
+      --font-serif: 'Times New Roman', Times, serif;
+      --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--paper); color: var(--ink); font-family: var(--font-serif); font-size: 17px; line-height: 1.75; -webkit-font-smoothing: antialiased; }
+    .container { max-width: 96%; margin: 0 auto; padding: 0 2rem; }
+    #lang-toggle-bar { padding: 2rem 2rem 0; max-width: 96%; margin: 0 auto; }
+    #lang-toggle { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.08em; cursor: pointer; background: none; border: none; padding: 0; color: var(--ink); text-decoration: none; }
+    #lang-toggle span { transition: background-color 0.1s, color 0.1s; }
+    #lang-toggle span.active { background-color: var(--accent); color: #fff; padding: 0 2px; }
+    .es, .en { display: none; }
+    body.lang-es .es { display: revert; }
+    body.lang-en .en { display: revert; }
+    span.es, span.en { display: none; }
+    body.lang-es span.es { display: inline; }
+    body.lang-en span.en { display: inline; }
+    section { padding: 5rem 0; border-bottom: 1px solid var(--rule); }
+    section:last-of-type { border-bottom: none; }
+    .section-label { font-family: var(--font-mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 2.5rem; }
+    #bio { padding-top: 2rem; }
+    #bio p:last-child { margin-bottom: 0; }
+    a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--ink); text-underline-offset: 3px; transition: background-color 0.1s, color 0.1s; }
+    a:hover { color: #ffffff; background-color: var(--accent); text-decoration: none; }
+    .project { margin-bottom: 3.5rem; padding-bottom: 3.5rem; border-bottom: 1px dashed var(--rule); }
+    .project:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .project-meta { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+    .project h3 { font-family: var(--font-serif); font-weight: normal; font-size: 1.15rem; line-height: 1.4; margin-bottom: 0.8rem; }
+    .project p { font-size: 0.93rem; }
+    .pub-list { list-style: none; }
+    .pub-list li { padding: 1.6rem 0; border-bottom: 1px dashed var(--rule); font-size: 0.95rem; }
+    .pub-list li:first-child { padding-top: 0; }
+    .pub-list li:last-child { border-bottom: none; }
+    .pub-meta { font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.06em; margin-bottom: 0.35rem; text-transform: uppercase; }
+    .pub-title { font-style: italic; }
+    .doi-link { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.04em; }
+    .contact-line { display: flex; gap: 0.8rem; align-items: baseline; margin-bottom: 0.6rem; }
+    .first-project { margin-top: 2rem; }
+    .first-contact-line { margin-top: 1.5rem; }
+    .contact-line .label { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.08em; min-width: 4.5rem; text-transform: uppercase; }
+    footer { padding: 2.5rem 0; }
+    footer .inner { max-width: 96%; margin: 0 auto; padding: 0 2rem; font-family: var(--font-mono); font-size: 0.65rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; }
+  </style>
+</head>
+<body class="lang-es">
+
+  <div id="lang-toggle-bar">
+    <button id="lang-toggle" aria-label="Switch language">
+      [<span id="lbl-es" class="active">ES</span>/<span id="lbl-en">EN</span>]
+    </button>
+  </div>
+
+  <section id="bio">
+    <div class="container">
+      <p class="es">Mi nombre es Marcos Rostan Davyt.</p>
+      <p class="en">My name is Marcos Rostan Davyt.</p>
+      <p class="es">Soy estudiante de Doctorado en Filosof&iacute;a. Trabajo en est&eacute;tica.</p>
+      <p class="en">I am a Philosophy PhD student, working on aesthetics.</p>
+      <p class="es">Me interesan las formas en las que el discurso institucionalizado sobre las artes (cr&iacute;tica, historia del arte) disputa sus fronteras disciplinares y se integra en nuestra apreciaci&oacute;n est&eacute;tica de las artes visuales.</p>
+      <p class="en">I&apos;m interested in the ways in which institutionalized discourse on visual arts (criticism, art history) dispute its disciplinary boundaries and integrate into our aesthetic appreciation of visual art.</p>
+      <p class="es">Trabajo tambi&eacute;n sobre est&eacute;tica ambiental y controversias, pregunt&aacute;ndome c&oacute;mo se movilizan argumentos est&eacute;ticos en contextos pol&iacute;ticos.</p>
+      <p class="en">I also work on environmental aesthetics and controversies, asking how aesthetic arguments are mobilized in political contexts (specifically in Uruguay).</p>
+      <p class="es">Soy Ayudante en la Universidad de la Rep&uacute;blica (Montevideo, Uruguay). Curs&eacute; la Licenciatura en Filosof&iacute;a y la Maestr&iacute;a en Ciencias Humanas (perfil Filosof&iacute;a Contempor&aacute;nea) en la misma universidad.</p>
+      <p class="en">I am a Teaching and Research Assistant at University of the Republic (Montevideo, Uruguay). I earned a Bachelor&apos;s degree in Philosophy and a Master&apos;s degree in the Human Sciences (with a focus on Contemporary Philosophy) from the same university.</p>
+      <p class="es">Mi CV completo est&aacute; disponible en <a href="https://exportcvuy.anii.org.uy/cv/?2234526e775435532bfa3933049f276a">CVUy</a>.</p>
+      <p class="en">A full CV is available <a href="https://exportcvuy.anii.org.uy/cv/?2234526e775435532bfa3933049f276a">here</a>.</p>
+    </div>
+  </section>
+
+  <section id="proyectos">
+    <div class="container">
+      <div class="section-label es">Proyectos</div>
+      <div class="section-label en">Projects</div>
+      <div class="project">
+        <div class="project-meta es">Tesis doctoral &middot; 2025&ndash;presente</div>
+        <div class="project-meta en">Doctoral dissertation &middot; 2025&ndash;present</div>
+        <h3 class="es">La performatividad de la escritura en la apreciaci&oacute;n est&eacute;tica de las artes visuales</h3>
+        <h3 class="en">The Performativity of Writing in the Aesthetic Appreciation of the Visual Arts</h3>
+        <p class="es">Proyecto de tesis doctoral en la Escuela Internacional de Doctorado de la Universidad de Murcia. Explora c&oacute;mo los textos cr&iacute;ticos (rese&ntilde;as, cat&aacute;logos, ensayos) no meramente describen sino que configuran activamente nuestra experiencia est&eacute;tica del arte visual. Tutora: Mar&iacute;a Jos&eacute; Alcaraz Le&oacute;n.</p>
+        <p class="en">Doctoral dissertation at the International Doctoral School of the University of Murcia. The project explores how critical texts do not merely describe but actively shape the aesthetic experience of visual art. Supervisor: Mar&iacute;a Jos&eacute; Alcaraz Le&oacute;n.</p>
+      </div>
+      <div class="project">
+        <div class="project-meta es">Proyecto financiado &middot; CSIC, Udelar &middot; 2026</div>
+        <div class="project-meta en">Funded project &middot; CSIC, Udelar &middot; 2026</div>
+        <h3 class="es">Argumentos est&eacute;ticos en controversias medioambientales en Uruguay</h3>
+        <h3 class="en">Aesthetic Arguments in Environmental Controversies in Uruguay</h3>
+        <p class="es">Proyecto en el marco del Programa de Iniciaci&oacute;n a la Investigaci&oacute;n de la Comisi&oacute;n Sectorial de Investigaci&oacute;n Cient&iacute;fica (CSIC). Indaga de qu&eacute; manera consideraciones est&eacute;ticas (nociones de belleza, identidad paisaj&iacute;stica) aparecen en disputas sobre medio ambiente en Uruguay. Desarrollado junto a Nahuel Roel Aspe&eacute;, con referencia acad&eacute;mica de Washington Morales-Maciel.</p>
+        <p class="en">Project funded by the Scientific Research Sectoral Commission (CSIC) through its Research Initiation Programme. It investigates how aesthetic language&mdash;notions of beauty, landscape identity&mdash;appears in environmental disputes in Uruguay. Developed with Nahuel Roel Aspe&eacute;, with academic supervision by Washington Morales-Maciel.</p>
+      </div>
+      <div class="project">
+        <div class="project-meta es">Bolet&iacute;n epistolar</div>
+        <div class="project-meta en">Epistolary newsletter</div>
+        <h3 class="es"><a href="https://nadabasta.substack.com/">con la nada basta</a></h3>
+        <h3 class="en"><a href="https://nadabasta.substack.com/">con la nada basta</a></h3>
+        <p class="es">Desde 2021, con mi amiga Agustina, nos mandamos cartas. Les llamamos “ensayos epistolares” y suelen tener alrededor de 500 palabras. La periodicidad del intercambio ha oscilado, pero el proyecto sigue activo.</p>
+        <p class="en">Since 2021, my friend Agustina and I have been writing letters to each other. We call them “epistolary essays,” and they&apos;re usually around 500 words long. The frequency of our exchanges has varied, but the project is still ongoing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="publicaciones">
+    <div class="container">
+      <div class="section-label es">Publicaciones</div>
+      <div class="section-label en">Publications</div>
+      <ul class="pub-list">
+        <li>
+          <div class="pub-meta">2026 &middot; <span class="es">Art&iacute;culo</span><span class="en">Article</span></div>
+          <span class="pub-title es">Dom&eacute;stico y salvaje: Humberto Rigalli y la experimentaci&oacute;n art&iacute;stica en el umbral p&uacute;blico-privado.</span>
+          <span class="pub-title en">Domestic and Wild: Humberto Rigalli and Artistic Experimentation at the Public-Private Threshold.</span>
+          <span> <em>Cuadernos de M&uacute;sica, Artes Visuales y Artes Esc&eacute;nicas</em>, 21(2), 72&ndash;91.</span><br />
+          <a class="doi-link" href="https://doi.org/10.11144/javeriana.mavae21-1.dshr" target="_blank" rel="noopener noreferrer">doi:10.11144/javeriana.mavae21-1.dshr &#8599;</a>
+        </li>
+        <li>
+          <div class="pub-meta es">2025 &middot; Art&iacute;culo</div>
+          <div class="pub-meta en">2025 &middot; Article</div>
+          <span class="pub-title es">M&aacute;s all&aacute; del &ldquo;desaf&iacute;o de Carroll&rdquo;: sobre la necesidad de distinguir entre cr&iacute;tica e historia del arte.</span>
+          <span class="pub-title en">Beyond the &ldquo;Carroll Challenge&rdquo;: on the Need to Distinguish between Art Criticism and Art History.</span>
+          <span> <em>Revista Colombiana de Pensamiento Est&eacute;tico e Historia del Arte</em>, 22.</span><br />
+          <a class="doi-link" href=" https://doi.org/10.15446/rcpeha.n22.119545" target="_blank" rel="noopener noreferrer">doi:10.15446/rcpeha.n22.119545 &#8599;</a>
+        </li>
+        <li>
+          <div class="pub-meta">2025 &middot; <span class="es">Art&iacute;culo &middot; Con Washington Morales-Maciel</span><span class="en">Article &middot; With Washington Morales-Maciel</span></div>
+          <span class="pub-title">Experiential Meaning of Everyday Design: Narratives In and Beyond Objects.</span>
+          <span> <em>The Polish Journal of Aesthetics</em>, 75(2), 53&ndash;68.</span><br />
+          <a class="doi-link" href="https://doi.org/10.19205/75.25.3" target="_blank" rel="noopener noreferrer">doi:10.19205/75.25.3 &#8599;</a>
+        </li>
+        <li>
+          <div class="pub-meta">2025 &middot; <span class="es">Art&iacute;culo &middot; Con Nahuel Roel Aspe&eacute;</span><span class="en">Article &middot; With Nahuel Roel Aspe&eacute;</span></div>
+          <span class="pub-title es">Lo excepcional y lo cotidiano: Est&eacute;tica y pol&iacute;tica ambiental en dos controversias uruguayas.</span>
+          <span class="pub-title en">The Exceptional and the Everyday: Aesthetics and Environmental Politics in Two Uruguayan Controversies.</span>
+          <span> <em>Th&eacute;mata Revista de Filosof&iacute;a</em>, (72), 233&ndash;258.</span><br />
+          <a class="doi-link" href="https://doi.org/10.12795/themata.2025.i72.12" target="_blank" rel="noopener noreferrer">doi:10.12795/themata.2025.i72.12 &#8599;</a>
+        </li>
+        <li>
+          <div class="pub-meta">2023 &middot; <span class="es">Actas de congreso</span><span class="en">Conference proceedings</span></div>
+          <span class="pub-title es">Sentidos encontrados, afinidades inesperadas: Juan Fl&oacute; y Jorge Gumier Maier contra el arte contempor&aacute;neo.</span>
+          <span class="pub-title en">Conflicting Meanings, Unexpected Affinities: Juan Fl&oacute; and Jorge Gumier Maier against Contemporary Art.</span>
+          <span class="es"> <em>Actas del VI Seminario Internacional de Investigaci&oacute;n en Arte y Cultura Visual (SIPACV)</em>, 426&ndash;432.</span>
+          <span class="en"> <em>Proceedings of the VI International Seminar on Research in Art and Visual Culture (SIPACV)</em>, 426&ndash;432.</span><br />
+          <a class="doi-link" href="https://nucleodeculturavisual.com/wp-content/uploads/2024/07/actas-sipacv-vi.pdf" target="_blank" rel="noopener noreferrer">PDF &#8599;</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="ensenanza">
+    <div class="container">
+      <div class="section-label es">Ense&ntilde;anza</div>
+      <div class="section-label en">Teaching</div>
+      <p class="es">Desde 2021 me desempe&ntilde;o como Ayudante (Grado 1) en la Universidad de la Rep&uacute;blica.</p>
+      <p class="en">Since 2021 I am a Teaching and Research Assistant at the University of the Republic across three faculties.</p>
+      <p class="es">Participo en los cursos Est&eacute;tica I y II y T&oacute;picos Especiales de la Licenciatura en Filosof&iacute;a de la <a href="https://fhce.edu.uy/">FHCE</a>. En esos cursos, he dado clases sobre la est&eacute;tica de Plotino, la teor&iacute;a de la belleza funcional, definici&oacute;n y definibilidad del arte y teor&iacute;as contempor&aacute;neas de la experiencia est&eacute;tica. Tambi&eacute;n participo en los cursos Est&eacute;tica y Dise&ntilde;o I y II, as&iacute; como de Problemas de Dise&ntilde;o, de la Licenciatura en Dise&ntilde;o de Comunicaci&oacute;n Visual de la&nbsp;<a href="https://www.fadu.edu.uy/">FADU</a>. En esos cursos, he dado clases sobre conceptos b&aacute;sicos de est&eacute;tica y la teor&iacute;a de la belleza funcional.</p>
+      <p class="en">I joined the teaching staff for the courses Aesthetics I and II and Special Topics in the Bachelor&rsquo;s Degree in Philosophy at <a href="https://fhce.edu.uy/">FHCE</a>. In these courses, I have taught on Plotinus&rsquo;s aesthetics, the theory of functional beauty, the definition and definability of art, and contemporary theories of aesthetic experience. I also teach in the Aesthetics and Design I and II courses, as well as the Problems in Design course, for the Bachelor&rsquo;s Degree in Visual Communication Design at <a href="https://www.fadu.edu.uy/">FADU</a>. In these courses, I have taught classes on basic concepts of aesthetics and the theory of functional beauty.</p>
+      <p class="es">Trabajo tambi&eacute;n en la <a href="https://www.psico.edu.uy/">Facultad de Psicolog&iacute;a</a> en Epistemolog&iacute;a, un curso introductorio que recibe a m&aacute;s de dos mil estudiantes cada a&ntilde;o. Realizo tareas de apoyo a la ense&ntilde;anza (dise&ntilde;o de materiales did&aacute;cticos, evaluaciones y mantenimiento del espacio virtual del curso).</p>
+      <p class="en">I also work in the&nbsp;<a href="https://psico.edu.uy/">Faculty of Psychology</a> on Epistemology, an introductory course that welcomes more than two thousand students each year. I perform teaching support tasks (designing instructional materials, assessments and maintaining the course&rsquo;s online platform).</p>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="container">
+      <div class="section-label es">Email</div>
+      <div class="section-label en">Email</div>
+      <div class="contact-line first-contact-line">
+        <a href="mailto:marcos.rostan@fhce.edu.uy">marcos.rostan [at] fhce.edu.uy</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="inner">
+      <span> </span>
+      <span>Actualizado el / Last updated: 06/04/2026</span>
+    </div>
+  </footer>
+
+<script>
+    document.getElementById('lang-toggle').addEventListener('click', function() {
+      var body = document.body;
+      var isEs = body.classList.contains('lang-es');
+      body.classList.toggle('lang-es', !isEs);
+      body.classList.toggle('lang-en', isEs);
+      document.documentElement.lang = isEs ? 'en' : 'es';
+      document.getElementById('lbl-es').classList.toggle('active', !isEs);
+      document.getElementById('lbl-en').classList.toggle('active', isEs);
+    });
+  </script>
+</body>
+</html>
